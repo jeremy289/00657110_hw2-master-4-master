@@ -13,8 +13,6 @@ struct firstView: View {
     @State private var show = false
     var body: some View {
         VStack {
-            
-           
             Text("高屏第一偶像團體")
                 .font(.largeTitle)
                 .foregroundColor(Color.pink)
@@ -25,15 +23,12 @@ struct firstView: View {
                     .scaledToFit()
                     .transition(.scale)
             }
-            
-                
         }
         .background(Image("light_background"))
         .animation(.easeInOut(duration:5))
         .onAppear{
             self.show = true
         }
-        
     }
 }
 

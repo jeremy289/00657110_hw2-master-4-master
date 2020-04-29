@@ -20,9 +20,6 @@ struct youtuberlist: View {
                         }
                     }
                 }
-                
-               
-                
             }
         }
       

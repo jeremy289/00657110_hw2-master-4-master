@@ -12,18 +12,13 @@ struct hot_videoView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("熱門影片")) {
-                    
                     ForEach(video) { (youtube) in
                         NavigationLink(destination: LinkView(youtube: youtube)) {
                             youtubrRow(youtube: youtube)
                         }
                     }
-                }
-               
-               //.foregroundColor(.primary)
-                
             }
+        .navigationBarTitle("熱門影片")
         }
     }
 }
